@@ -74,3 +74,5 @@ saveDataCSV(PIpointsArray)
 SetUp WebAPI max return values by request, default value can be overriden in configuration
 
 // TODO ....finish this docu...
+
+Feel free to contribute ;)
