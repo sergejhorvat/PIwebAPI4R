@@ -20,7 +20,7 @@ if (!require("dplyr")) install.packages("dplyr")
 library("dplyr")
 
 # Static variables
-PIServer <- "InaRNRPI"
+PIServer <- ""
 base_url <- "https://pivision/piwebapi"  # PUT YOUR BASE URL FOR PI WEB API
 #startTime <- "10-Sep-2018"
 #endTime <- "20-Sep-2018"
@@ -135,7 +135,7 @@ convertTimeZone <- function(timeValues){
     )
     # Get system local timezone
     timezone <- Sys.timezone(location = TRUE)
-    # Change timestamps from UTC to CEST (UTC+1h(in my case))
+    # Change timestamps from UTC to Local time zone
     timeValues$Timestamp <- with_tz(timeValues$Timestamp,tz=timezone)
     # Return converted data timestamps
     timeValues
@@ -208,11 +208,6 @@ loadDataCSV <- function(PIpointsArray){
         
     }
 }
-
-
-#TimeShifter shift time of TAG observation 
-
-
 
 #### CURRENT VALUE ####
 # NOT IMPLEMENTED
