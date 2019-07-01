@@ -156,7 +156,7 @@ joinData <- function(PIpointsArray){
     pointsDataFrame <- eval(parse(text = PIpointsArray[1]))
     
     # Check the first column transposed to cat
-    #cat("PointsDataFrame to use for initial joining: ",t(pointsDataFrame[,1]), "\n" )
+    #cat("PoinsDataFrame to use for initial joining: ",t(pointsDataFrame[,1]), "\n" )
     
     cat("PiPointArray class: ", class(PIpointsArray), "\n")
     cat("Join data ", PIpointsArray[1], "\n")
