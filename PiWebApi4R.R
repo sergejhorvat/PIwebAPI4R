@@ -1,4 +1,4 @@
-# Sergej Horvat - shorvat@mojemjesto.net
+# Sergej Horvat
 # 27.11.2018.
 # version 0.2
 # Connecting R to PI system via PI WEB API
@@ -20,7 +20,7 @@ if (!require("dplyr")) install.packages("dplyr")
 library("dplyr")
 
 # Static variables
-PIServer <- ""
+PIServer <- "yourPIserver"
 base_url <- "https://pivision/piwebapi"  # PUT YOUR BASE URL FOR PI WEB API
 #startTime <- "10-Sep-2018"
 #endTime <- "20-Sep-2018"
